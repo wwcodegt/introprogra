@@ -1,0 +1,2 @@
+Abrir el documento con la herramienta en linea
+https://app.diagrams.net/
