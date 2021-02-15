@@ -1,0 +1,31 @@
+#Ejemplos ciclo WHILE
+
+#Imprimir Hola Mundo 20 veces
+contador = 0   
+while contador < 20:
+	print("Hola Mundo")
+	contador += 1
+
+#------------------------------------------
+
+#Imprimir tabla del 3
+multiplicando = 1
+while multiplicando <= 10:
+	producto = multiplicando * 3
+	print(producto)
+	multiplicando += 1
+
+#------------------------------------------
+
+#Adivinar un numero predefinido
+
+numero_ganador = 25
+numero = int(input("Ingrese numero:"))
+
+while numero != numero_ganador:
+	print("Lo siento, no adivinaste el numero :(")
+	numero = int(input("Ingrese numero:"))
+
+print("Felicidades!! Adivinaste el numero :)")
+
+#------------------------------------------

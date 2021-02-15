@@ -1,0 +1,114 @@
+#Funciones
+
+Def mi_funcion():
+	Print("Hola Mundo")
+	
+mi_funcion()
+
+#------------------------------------------
+
+Def mi_funcion():
+	return "Hola Mundo"
+	
+saludo = mi_funcion()
+Print(saludo)
+
+#------------------------------------------
+
+#Operaciones matematicas
+
+def sumar(n1, n2):
+	resultado = n1 + n2
+	return print("Total suma:", resultado)
+
+def restar(n1, n2):
+	resultado = n1 - n2
+	return print("Total resta:", resultado)
+
+def operar():
+	numero1 = int(input("Ingresa primer numero: "))
+	numero2 = int(input("Ingresa segundo numero: "))
+	sumar(numero1, numero2)
+	restar(numero1, numero2)
+	
+operar()
+
+#----------------------------------------------
+#BONUS Funcion para tablas de multiplicar utilizando el ciclo while
+
+def tabla_multiplicar(numero):
+	contador = 0 
+	print("Tabla del:", numero)
+	while contador <= 10:
+		print(contador * numero)
+		contador += 1 
+
+def tablas():
+	variable = input("Desea una tabla de multiplicar? Si/No ")
+	while variable != "No":
+	numero_ingresado = int(input("Ingrese numero: "))
+	tabla_multiplicar(numero_ingresado)
+	variable = input("Desea otra tabla de multiplicar? Si/No ")
+	print("Fin de programa")
+	
+tablas()
+
+#----------------------------------------------
+#BONUS Funcion para contar una letra especifica en una palabra
+
+
+def contar_letras(palabra, letra):
+	contador_letra = 0
+	for caracter in palabra:
+		if caracter == letra:
+		contador_letra += 1
+	return "Total de letras en palabra: " + str(contador_letra)
+
+def mi_funcion():
+	variable = input("Desea contar una letra en una palabra? Si/No ")
+	while variable != "No":
+		palabra_ingresada = input("Ingrese palabra: ") 
+		letra_ingresada = input("Ingrese letra: ") 
+		print(contar_letras(palabra_ingresada, letra_ingresada))
+		variable = input("Desea contar otra letra en una palabra? ")
+print("Fin de programa")
+
+mi_funcion()
+
+#----------------------------------------------
+#BONUS Funcion para operaciones matematicas extendido
+
+def sumar(n1, n2):
+	resultado = n1 + n2
+	print("Total suma: ", resultado)
+
+def restar(n1, n2):
+	resultado = n1 - n2
+	print("Total resta: ", resultado)
+
+def multiplicar(n1, n2):
+	resultado = n1 * n2
+	print("Total multiplicacion: ", resultado)
+
+def dividir(n1, n2):
+	resultado = n1 / n2
+	return print("Total divisoin: ", resultado)
+
+def promedio(n1, n2):
+	resultado = (n1 + n2) / 2
+	return print("Total promedio: ", resultado)
+
+def operaciones(n1, n2):
+	sumar(n1, n2)
+	restar(n1, n2)
+	multiplicar(n1, n2)
+	dividir(n1, n2)
+	promedio(n1,n2)
+
+def obtener_numeros():
+	numero1 = int(input("Ingresa primer numero: "))
+	numero2 = int(input("Ingresa segundo numero: "))
+	operaciones(numero1, numero2)
+
+obtener_numeros()
+

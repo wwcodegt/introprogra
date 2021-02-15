@@ -1,0 +1,22 @@
+#Ejemplos ciclo FOR
+
+#Quiero leer todas las letras de un string
+
+for letra in "Hola Mundo!":
+	print (letra)
+
+#------------------------------------------
+
+#Contar una letra especifica en una palabra ingresada por el usuario
+
+contador_letra = 0
+palabra = input("Ingrese una palabra: ")
+letra = input("Ingrese letra a contar: ")
+
+for caracter in palabra:
+	if caracter == letra:
+	contador_letra += 1
+
+print("Cantidad de letra en palabra: " + str(contador_letra))
+
+#------------------------------------------
